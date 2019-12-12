@@ -85,4 +85,3 @@ class InitiativeStatusReportView(LoginRequiredMixin, CreateView):
         else:
             initiative = Initiative.objects.get(id=id)
             return render(request, "status.html", {"form": form, "initiative": initiative})
-

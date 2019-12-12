@@ -11,7 +11,6 @@ class Initiative(models.Model):
     date = models.DateField(default=timezone.now)
 
 
-
 class StatusReport(models.Model):
     content = models.TextField()
     author = models.ForeignKey(User, on_delete=models.PROTECT)
